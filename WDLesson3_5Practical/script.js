@@ -4,6 +4,11 @@
       3) Display the results in the appropriate element
 */
 function recArea(){
+      let len = parseFloat(document.getElementById("l").value);
+      let wid = parseFloat(document.getElementById("w").value);
+      let op = document.getElementById("output");
+      let A = len * wid;
+      op.innerHTML = "Area "+A;
 
 }
 
