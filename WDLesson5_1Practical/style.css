@@ -4,6 +4,7 @@ html,body{
 }
 .container{
   display:flex;
+  padding:10px;
 }
 .center{
   justify-content:center;
@@ -21,28 +22,22 @@ nav a{
   text-align:center;
 }
 nav a:hover{
-  background-color:blue;
   color:white;
-    font-weight: bold;
 }
 .subbanner{
   background-color:cornflowerblue;
-  padding:10px;
 }
 #banner{
   background-color:blue;
   color:white;
-  padding:10px;
 }
 #footer{
-   background-color:cornflowerblue;
-   color:white;
-   position:fixed;
-   left: 0;
-   right: 0;
-   bottom:0px;
-   height:30px;
-   padding:10px;
+  background-color:cornflowerblue;
+  color:white;
+  /*position:fixed;*/
+  left: 0;
+  right: 0;
+  bottom:0px;
 }
  
 .card{
@@ -53,8 +48,7 @@ nav a:hover{
   text-align:center;
 }
 .card img{
-  width:500px;
-  height: 500px;
+  width:100%;
 }
 .highlight{
   font-style:italic;
@@ -73,4 +67,7 @@ nav a:hover{
 }
 .card a:hover{
   background-color:cornflowerblue;
+}
+#panel{
+  flex:1;
 }

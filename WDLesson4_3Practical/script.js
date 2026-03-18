@@ -3,6 +3,14 @@
        2) Display BMI status as per the chart in index.html
        3) Display the corresponding image based on the BMI status.
 */
+function calcBMI(){
+    let weight = parseFloat(document.getElementById("weight").value);
+    let height = parseFloat(document.getElementById("height").value);
+    let bmi = Math.pow(703 * weight) / Math.pow(height*height);
+    let op = document.getElementById("output");
+    op.innerHTML = `Your BMI is ${bmi(2)}`;
+}
+
 /* 
 Guideline:
 1) Create the function
@@ -13,4 +21,3 @@ Guideline:
 
 Use past examples, classwork and practicals to assist you in completing this practical.
 */
-
