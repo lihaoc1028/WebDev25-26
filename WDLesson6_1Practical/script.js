@@ -34,17 +34,33 @@ for (let i = 0; i<meat_images.length ;i++){
   build +=`<div class = "card">
   <h2>"${meat_titles[i]}"</h2>
   <img src="images/${meat_images[i]}">
-  <p>"${meat_prices[i]}"</p>
+  <p>$${meat_prices[i]}</p>
   </div>`;
 }
 m.innerHTML = build;
 
 
   //Challenge 4:  Build cards for the meats. Place the build in the meat container. 
-
+build = "";
+for (let i = 0; i<seafood_images.length ;i++){
+  build +=`<div class = "card">
+  <h3>${seafood_titles[i]}</h3>
+  <img src="images/${seafood_images[i]}">
+  <p>$${seafood_prices[i]}</p>
+  </div>`;
+}
+s.innerHTML = build;
 
   //Challenge 5:  Build cards for the seafoods. Place the build in the seafood container.
-
+build = "";
+for (let i = 0; i<dessert_images.length ;i++){
+  build +=`<div class = "card">
+  <h4>${dessert_titles[i]}</h4>
+  <img src="images/${dessert_images[i]}">
+  <p>$${dessert_prices[i]}</p>
+  </div>`;
+}
+d.innerHTML = build;
   //Challenge 6:  Build cards for the desserts. Place the build in the dessert container.
 
 }

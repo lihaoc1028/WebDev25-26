@@ -77,11 +77,12 @@ nav a:hover{
 #panel{
   flex:1;
 }
-#card img{
-  width:100%;
-}
-.food{
+.card img{
   width:150px;
   height:150px;
+}
+.food{
+  width:50px;
+  height:5px;
   object-fit:cover;
 }
