@@ -21,7 +21,7 @@
         <p>This practical challenges students to provide various ways to filter  
           MVC Service Requests (Complaints) retrieved from NYC Open Data.</p>
         <a class="button" href="https://opendata.cityofnewyork.us/" target="_blank">NYC Open Data</a> 
-        <a class="button" target="_blank" href="https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2020-to-Present/erm2-nwe9/about_data"
+        <a class="button" target="_blank" href="https://data.cityofnewyork.us/Public-Safety/Motor-Vehicle-Collisions-Crashes/h9gi-nx95/about_data"
 "> MVC Service Request</a>
         <a class="button" target="_blank" href="https://jsoneditoronline.org/"> JSON Editor Online</a>
        </div>
@@ -31,15 +31,26 @@
       <div id="leftPanel">
         <!--Card below is the basic HTML to use for Challenge 1 and 3 -->
         <div class="card">
-          <h3>SEARCH By Borough</h3>
-          <input type="text" id="borough" placeholder="Enter Borough (all CAPS)">
+          <h3>SEARCH By id</h3>
+          <input type="text" id="crashid" placeholder="Enter id">
           <hr></hr>
-          <a class="button" onclick="filterByBorough()"> Search </a>
+          <a class="button" onclick="filterByid()"> Search </a>
         </div>
         <!--Challenge 1: Create another UI in order to filter by zip code. [See Challenge 2 in script.js] -->
-
+        <div class="card">
+          <h3>SEARCH By car type</h3>
+          <input type="text" id="cartype" placeholder="Enter car type">
+          <hr></hr>
+          <a class="button" onclick="filterByid()"> Search </a>
+        </div>
 
         <!--Challenge 3: Create another UI in order to filter by complaint type. [See Challenge 4 in script.js] -->
+         <div class="card">
+          <h3>SEARCH By #killed</h3>
+          <input type="text" id="killed" placeholder="Enter #killed">
+          <hr></hr>
+          <a class="button" onclick="filterByid()"> Search </a>
+        </div>
 
 
       </div>
